@@ -23,7 +23,6 @@ export class TooltipComponent implements OnInit {
   };
 
   aboveTarget=true;
-  visible=false;
   arrowSpace=14;
 
   constructor() { }
@@ -44,7 +43,7 @@ export class TooltipComponent implements OnInit {
   @ViewChild('tooltipElement') tooltipRef: ElementRef;
 
   updatePosition() {
-    if(this.tooltipRef && this.visible) {
+    if(this.tooltipRef) {
       // Start from top left corner of element to be tooltipped
       let left = this.targetRef.nativeElement.offsetLeft;
       let top = this.targetRef.nativeElement.offsetTop;
@@ -76,13 +75,11 @@ export class TooltipComponent implements OnInit {
   }
 
   show() {
-    this.visible=true;
     this.updatePosition();
     this.positionStyle.visibility='visible';
   }
 
   hide() {
-    this.visible=false;
     this.positionStyle.visibility='hidden';
   }
 
