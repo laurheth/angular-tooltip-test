@@ -37,9 +37,7 @@ export class TooltipComponent implements OnInit {
       // Start from top left corner of element to be tooltipped
       let left = this.positionRef.nativeElement.offsetLeft;
       let top = this.positionRef.nativeElement.offsetTop;
-
-      console.log(this.positionRef.nativeElement);
-      console.log(this.tooltipRef.nativeElement);
+      
       // Offset to middle of that element
       left += this.positionRef.nativeElement.clientWidth / 2;
       // top -= this.positionRef.nativeElement.clientHeight / 2;
@@ -55,8 +53,11 @@ export class TooltipComponent implements OnInit {
   }
 
   show() {
-    // this.hidden=false;
     this.positionStyle.visibility='visible';
+  }
+
+  hide() {
+    this.positionStyle.visibility='hidden';
   }
 
 }
