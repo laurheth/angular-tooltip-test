@@ -5,6 +5,7 @@
     border: 2px solid black;
     padding: 5px;
     border-radius: 5px;
+    max-width: 300px;
 
     // Shared styles for both arrow types
     &::after, &::before {
