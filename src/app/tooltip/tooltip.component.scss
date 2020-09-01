@@ -1,7 +1,58 @@
-div {
+.tooltip {
     position: absolute;
     background: #ffffff;
-    border: 1px solid black;
+    color: #000000;
+    border: 2px solid black;
     padding: 5px;
     border-radius: 5px;
+
+    // Shared styles for both arrow types
+    &::after, &::before {
+        left: 50%;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+    }
+    
+    &::after {
+        border-color: transparent;
+        border-width: 10px;
+        margin-left: -10px;
+    }
+    &::before {
+        border-color: transparent;
+        border-width: 13px;
+        margin-left: -13px;
+    }
+
+    // Arrow on bottom of tooltip
+    &.bottomArrow {
+        &::after, &::before {
+            top: 100%;
+        }
+        
+        &::after {
+            border-top-color: #ffffff;
+        }
+        &::before {
+            border-top-color: #000000;
+        }
+    }
+
+    // Arrow on top of tooltip
+    &.topArrow {
+        &::after, &::before {
+            bottom: 100%;
+        }
+        
+        &::after {
+            border-bottom-color: #ffffff;
+        }
+        &::before {
+            border-bottom-color: #000000;
+        }
+    }
 }

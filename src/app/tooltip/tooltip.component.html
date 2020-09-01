@@ -3,6 +3,7 @@
     id={{tooltipId}}
     [ngStyle]=positionStyle
     hasTooltip
+    [ngClass]="{'tooltip': true, 'bottomArrow': aboveTarget, 'topArrow': !aboveTarget}"
     >
     {{tooltipText}}
 </div>

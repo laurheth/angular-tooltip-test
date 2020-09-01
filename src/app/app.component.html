@@ -1,9 +1,41 @@
-<h1>Angular Tooltip Test</h1>
+<header>
+  <div class="wrapper">
+    <h1>Angular Tooltip Test</h1>
+  </div>
+</header>
 
-<button [appTooltip]="'Button A tooltip text'">
-  Button A
-</button>
+<section>
+  <div class="wrapper">
+    <h2>Section title A</h2>
+    <!-- tooltip is added by a directive -->
+    <button [appTooltip]="'Button A tooltip text'">
+      Button A
+    </button>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus ipsam, quis soluta officia fugit, vel eveniet, ad assumenda quibusdam eius unde ex aliquid adipisci dicta! Optio, autem laudantium. Placeat, fugiat?
+    </p>
+  </div>
+</section>
 
-<button [appTooltip]="'Button B tooltip text'">
-  Button B
-</button>
+<section>
+  <div class="wrapper">
+    <h2>Section title B</h2>
+    <!-- tooltip is added by a directive -->
+    <button [appTooltip]="'Button B tooltip text'">
+      Button B
+    </button>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur dolor dolorem laborum quod expedita repellat eaque. Vero non natus explicabo placeat at odio hic. Sapiente quia animi consectetur minima recusandae.</p>
+  </div>
+</section>
+
+<!-- This section is just here as an excuse to scroll up and down a bit -->
+<section>
+  <div class="wrapper">
+    <h2>A large section of text so you can scroll a bit</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias dolorem quibusdam quod cumque nesciunt error culpa consequatur, saepe iusto ipsam perferendis corporis minima voluptatum vitae quam animi natus veniam. Et.</p>
+    <p>Nesciunt aspernatur modi sapiente hic totam tempora dolor accusamus quasi culpa dolores optio mollitia, quibusdam eum magni eveniet esse architecto sequi fugit explicabo, quo adipisci, velit impedit nisi consequatur. Excepturi.</p>
+    <p>Quia, minima. Libero, debitis pariatur illum, molestias totam reprehenderit veritatis hic, nesciunt optio alias modi impedit cumque. Consequatur quis natus enim ipsam in, tenetur ullam maxime minima atque odit labore?</p>
+    <p>Fugiat fugit autem culpa, corrupti iusto quam consectetur adipisci earum aliquid omnis atque cum sapiente debitis commodi, accusantium cumque illum dolorum sequi. Deserunt, accusamus? Ex amet magnam suscipit porro saepe?</p>
+    <p>Nobis officia eaque quos odit similique voluptate ipsum nostrum mollitia itaque pariatur aliquam, nulla veritatis natus excepturi, necessitatibus, aliquid explicabo architecto provident totam obcaecati animi perferendis soluta! Vero, in praesentium.</p>
+  </div>
+</section>
